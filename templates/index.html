@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block div%}
+    <section id="main">
+        <div>
+            <h1>请输入你的评论</h1>
+        </div>
+        <form method="post" action="{{ url_for('index.submit', id=1) }}">
+            <div>
+                <textarea class="form-control" rows="8" name="content" placeholder="添加评论" style="width:;width: -webkit-fill-available"></textarea>
+            </div>
+            <div>
+                <button class="btn btn-primary" type="submit">提交评论</button>
+            </div>
+        </form>
+    </section>
+{% endblock %}
